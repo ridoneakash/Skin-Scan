@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".MainActivity">
+
+ <LinearLayout
+    android:id="@+id/rel1"
+    android:layout_width="170dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+     android:layout_marginLeft="20dp"
+     android:layout_marginRight="20dp"
+    android:background="@drawable/greenshade"
+    android:layout_alignParentBottom="true"
+    android:elevation="2dp">
+
+
+     <TextView
+
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginStart="16dp"
+         android:layout_marginTop="100dp"
+         android:text="Take action"
+         android:textColor="@color/white"
+         android:textSize="25sp" />
+
+
+
+
+
+     <LinearLayout
+         android:layout_width="180dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="8dp">
+
+    </LinearLayout>
+
+     <Button
+         android:id="@+id/button"
+         android:layout_width="64dp"
+         android:layout_height="64dp"
+         android:layout_marginStart="55dp"
+         android:layout_marginTop="25dp"
+         android:background="@drawable/camera1"
+         />
+
+
+
+ </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rel2"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="220dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/greenshade"
+        android:layout_alignParentBottom="true"
+        android:elevation="2dp">
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="100dp"
+            android:text="Lunch Gallery"
+            android:textColor="@color/white"
+            android:textSize="25sp" />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp">
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="108dp"
+            android:layout_height="108dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="1dp"
+            android:background="@drawable/gallery0_foreground" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:background="@drawable/white">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        android:id="@+id/imageView"
+        android:scaleType="fitCenter"
+        android:src="@drawable/front"
+        />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="-6dp"
+        android:background="#095d55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/demoText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:justificationMode="inter_word"
+                android:lineSpacingMultiplier="0.9"
+                android:text="First import your image using your camera:"
+                android:textSize="14sp"
+                android:visibility="gone"
+                tools:targetApi="O" />
+
+
+            <TextView
+                android:id="@+id/classified"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:includeFontPadding="false"
+                android:text="Your camera in:"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="19sp" />
+
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.06"
+                android:text=""
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="#FFE500"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/click_here"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:letterSpacing="0.03"
+                android:text="Click On the result to know more"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
